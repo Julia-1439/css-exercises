@@ -1,13 +1,13 @@
-.button, .left, .right {
+.inverted, .fancy {
     font-size: 28px;
     font-family: Helvetica, "Times New Roman", sans-serif;
 }
 
-.left {
+.inverted {
     background-color: hsl(0, 0%, 0%);
     color: #FFFFFF;
 }
 
-.right {
+.fancy {
     background-color: rgb(255, 255, 0);
 }
