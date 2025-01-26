@@ -21,13 +21,13 @@ body {
 
 /* Buttons */
 
-.button, .confirm, .cancel, #cancel-button {
+.button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.confirm, #confirm-button{
+.button.confirm{
   background-color: green; 
   color: white;
   font-weight: bold;
