@@ -9,31 +9,24 @@ body {
   margin: 16px auto;
 
   /* Additions */
-  padding: 8px;
+  padding: 16px 8px 8px 8px;
 }
 
-.title {
+/* Additions */
+.title, .content, .button-container {
   background: #e3f4ff;
-
-  /* Additions */
   margin: 8px;
   padding: 8px;
 }
 
 .content {
-  background: #e3f4ff;
-
   /* Additions */
-  margin: 8px;
-  padding: 16px 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .button-container {
-  background: #e3f4ff;
-
   /* Additions */
-  margin: 8px;
-  padding: 8px;
   text-align: center;
 }
 
