@@ -9,20 +9,24 @@ body {
   margin: 16px auto;
 
   /* Additions */
-  padding: 16px 8px 8px 8px;
+  padding: 8px;
 }
 
 /* Additions */
 .title, .content, .button-container {
   background: #e3f4ff;
-  margin: 8px;
   padding: 8px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
 .content {
   /* Additions */
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 8px;
+  margin-bottom: 8px;
 }
 
 .button-container {
@@ -37,5 +41,5 @@ button {
   /* Additions */
   display: block;
   margin: 0 auto;
-  padding: 8px 16px;
+  padding: 8px 24px;
 }
