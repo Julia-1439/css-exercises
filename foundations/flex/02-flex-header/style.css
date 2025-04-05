@@ -1,6 +1,13 @@
+/* Time taken: 30 minutes */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  /* JL */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -9,17 +16,27 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
+  /* JL */
+  margin: 8px 0;
 }
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
-}
 
-a {
+.header a {
   font-size: 22px;
   background: white;
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+
+  /* JL */
+  margin: 8px;
+}
+
+/* JL */
+.left-links ul, .right-links ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
 }
