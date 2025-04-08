@@ -12,6 +12,12 @@ img {
   font-weight: 900;
 }
 
+/* JL */
+.text {
+  width: 200px;
+  text-wrap: wrap;
+}
+
 /* do not edit this footer */
 .footer {
   position: fixed;
