@@ -15,6 +15,7 @@ body {
 
   /* JL */
   display: flex;
+  justify-content: space-between;
 }
 
 .profile-image {
