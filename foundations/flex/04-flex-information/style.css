@@ -22,6 +22,15 @@ img {
   text-align: center;
 }
 
+
+/* JL */
+.plant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+}
+
 /* do not edit this footer */
 .footer {
   position: fixed;
