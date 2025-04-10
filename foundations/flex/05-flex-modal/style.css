@@ -27,6 +27,13 @@ body {
 
   /* JL */
   padding: 16px;
+  display: flex;
+}
+
+/* JL */
+.modal-right {
+  display: flex;
+  flex-direction: column;
 }
 
 /* JL */
