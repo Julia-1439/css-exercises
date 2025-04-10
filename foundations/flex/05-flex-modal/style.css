@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
-  height: 100%;
+  /* This percentage is how much of the parent container this div would take
+  up. HTML's parent is the size of the screen, and body's parent is html.
+  Without a percentage, a div's height would be the height of its content,
+  not necessarily the whole parent container.  */
+  height: 100%; 
 }
 
 body {
