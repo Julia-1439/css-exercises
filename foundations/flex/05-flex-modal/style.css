@@ -45,6 +45,11 @@ body {
   font-weight: bold;
 }
 
+/* JL */
+.text {
+  font-size: 80%;
+}
+
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -93,3 +98,4 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
