@@ -28,12 +28,14 @@ body {
   /* JL */
   padding: 16px;
   display: flex;
+  gap: 16px;
 }
 
 /* JL */
 .modal-right {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 /* JL */
