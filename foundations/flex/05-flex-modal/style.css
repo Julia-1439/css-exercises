@@ -32,19 +32,18 @@ body {
 }
 
 /* JL */
-.modal-right {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* JL */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 16px;
   font-weight: bold;
   font-size: 125%;
+}
+
+/* JL */
+.text {
+  margin-bottom: 16px;
 }
 
 .icon {
