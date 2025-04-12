@@ -6,13 +6,13 @@ body {
   /* JL */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* space-between is not needed here since .container has flex 1 */
 }
 
 /* JL */
 .container {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
 }
 
 /* JL */
@@ -20,6 +20,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  padding: 48px;
+  gap: 16px;
 }
 
 .header {
@@ -28,11 +30,10 @@ body {
   color: white;
 
   /* JL */
-  box-sizing: border-box;
-  padding-left: 8px;
-  font-weight: bolder;
+  padding: 0 16px; /* better than only padding-left cuz what if your title is mega long */
+  font-weight: 900;
   font-size: larger;
-  line-height: 72px;
+  line-height: 72px; /* solution uses flex to center */
 }
 
 .footer {
@@ -41,6 +42,7 @@ body {
   color: darkmagenta;
 
   /* JL */
+  /* solution makes this a flex container */
   text-align: center;
   line-height: 72px;
 }
@@ -48,7 +50,11 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+
+  /* JL */
+  /* display: flex; NOT NEEDED. This is a flex item, not a flex container. */
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 /* JL */
@@ -59,12 +65,13 @@ body {
 /* JL */
 .sidebar li {
   list-style-type: none;
-  margin: 4px;
+  margin-bottom: 16px;
 }
 /* JL */
 .sidebar a {
   text-decoration: none;
   color: white;
+  font-size: 24px;
 }
 
 .card {
@@ -75,7 +82,6 @@ body {
   /* JL */
   font-size: x-small;
   box-sizing: border-box;
-  width: 250px;
+  width: 300px;
   padding: 8px;
-  margin: 8px;
 }
