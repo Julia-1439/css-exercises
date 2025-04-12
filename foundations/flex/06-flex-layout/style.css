@@ -5,10 +5,56 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  /* JL */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* JL */
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* JL */
+.footer {
+  background: #eee;
+}
+
+/* JL */
+.left-links, .right-links {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;  /* Default margins exist on list elements */
+  gap: 16px;
+}
+
+/* JL */
+a {
+  font-size: 75%;
+  text-decoration: none;
+  color: grey;
+}
+
+/* JL */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 12px;
 }
 
 img {
   width: 600px;
+}
+
+/* JL */
+.input, .buttons {
+  text-align: center;
 }
 
 button {
@@ -16,6 +62,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  /* JL */
+  padding: 4px 8px;
 }
 
 input {
