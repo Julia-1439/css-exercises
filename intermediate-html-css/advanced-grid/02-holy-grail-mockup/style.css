@@ -5,6 +5,12 @@
 
 .container {
   text-align: center;
+
+  /* JL */
+  display: grid;
+  grid-template-rows: 2fr 1fr 12fr 1fr;
+  grid-template-columns: minmax(250px, 1fr) 4fr;
+  gap: 5px;
 }
 
 .container div {
@@ -17,15 +23,48 @@
 
 .header {
   background-color: #393f4d;
+
+  /* JL */
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+
+}
+
+/* JL */
+.logo {
+  place-self: center start;
+}
+
+.menu {
+  align-self: center;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+
+  /* JL */
+  list-style-type: none;
+}
+
+/* JL */
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .sidebar {
   background-color: #C50208;
+  
+  /* JL */
+  display: grid;
+  grid-row: 2 / 4;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 45px;
+  align-content: space-between;
 }
 
 .sidebar .photo {
@@ -33,7 +72,11 @@
   color: black;
   font-size: 12px;
   font-weight: normal;
-  border-radius: 10px;
+  border-radius: 10px; 
+
+  /* JL */
+  display: grid;
+  place-items: center; /* center the "image" */
 }
 
 
@@ -42,19 +85,47 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+
+  /* JL */
+  display: grid;
+  place-items: center; /* center the text */
 }
 
 .nav {
   background-color: #C50208;
+
+  /* JL */
+  grid-row: 2;
+  grid-column: 2 / -1;
+  display: grid;
+  align-items: center;
+}
+
+/* JL */
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+
+  /* JL */
+  list-style-type: none;
 }
 
 .article {
   background-color: #bccbde;
+
+  /* JL */
+  display: grid;
+  grid-row: 3;
+  grid-column: 2 / -1;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 .article p {
@@ -68,6 +139,9 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+
+  /* "The card elements inside the article container have a height of 200px" */
+  height: 200px;
 }
 
 .card p {
@@ -83,6 +157,12 @@
 
 .footer {
   background-color: #393f4d;
+
+  /* JL */
+  grid-row: 4;
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
 }
 
 .footer p {
