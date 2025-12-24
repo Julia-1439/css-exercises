@@ -16,4 +16,15 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+
+  /* JL */
+  transition-property: transform;
+  transition-timing-function: ease-in-out; /* "slower" than the default ease */
+  transition-duration: 500ms;
+  /* transition: transform ease-in-out 500ms; */
+}
+
+/* JL */
+button:hover {
+  transform: scale(1.1);
 }
