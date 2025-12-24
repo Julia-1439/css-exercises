@@ -37,10 +37,12 @@ button {
   transform-origin: center;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  opacity: 0%;
+  opacity: 0; 
   text-align: center;
 
-  top: 0; /* reposition */
+  /* Avoids using viewport units, instead relying on top & left to do the 
+initial centering. */
+  transform: translate(-50%, -100%); /* (*) reposition to a position that allows the slide-in to use self-relative units! wow! */
   transition-property: opacity, transform;
   transition-duration: 500ms;
   transition-timing-function: ease-out;
@@ -63,7 +65,7 @@ button {
   pointer-events: all;
 
   /*  */
-  transform: translate(-50%, calc(50vh - 50%));
+  transform: translate(-50%, -50%); /* undo the reposition in (*) */
 }
 
 .backdrop.show {
