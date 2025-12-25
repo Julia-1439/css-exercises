@@ -2,7 +2,7 @@
   max-width: 250px;
   margin: 40px auto;
   text-align: center;
-  line-height: 50px;
+  line-height: 50px; /* woooow you can do that? neat. I didn't even know this was a property */
   font-size: 15px;
   color: rgb(247, 247, 247);
   cursor: pointer;
@@ -19,6 +19,7 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+  /* transition: display 1s allow-discrete; */
 }
 
 ul.dropdown-menu li:hover {
@@ -27,6 +28,21 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+
+  /*  */
+  transform-origin: top;
+  animation: release 1s;
 }
 
-
+/*  */
+@keyframes release {
+  from {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.05);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
